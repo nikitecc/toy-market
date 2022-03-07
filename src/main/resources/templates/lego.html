@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин игрушек - игрушки LEGO</title>
+    <link rel="shortcut icon" href="../static/img/logo.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/uikit.min.css"/>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    <script src="../static/js/uikit.min.js"></script>
+    <script src="../static/js/uikit-icons.min.js"></script>
+</head>
+<body>
+<nav class="uk-navbar-container" uk-navbar>
+    <img data-src="#" width="75" height="50" alt="" uk-img="../static/img/logo.png"
+         class="uk-margin-small uk-margin-small-top uk-margin-small-left">
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-margin-small-left"><a href="#">Домашняя страница</a></li>
+            <li class="uk-active"><a href="#">Игрушки</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Лего</a></li>
+                        <li><a href="#">Фортнайт</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Фабрики</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li><a href="#">Личный кабинет</a></li>
+            <li><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="user"></a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-margin-medium-top" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <div>
+                <div class="uk-card-badge uk-label">Новинка</div>
+                <div class="uk-card-media-top">
+                    <img width="250" height="250" src="../static/img/toys/lego/jeep.jpeg" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Jeep® Wrangler</h3>
+                    <p>5500 руб.</p>
+                    <button class="uk-button uk-button-secondary uk-button-large" href="#modal-section-1" uk-toggle>
+                        Купить
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="modal-section-1" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Jeep® Wrangler</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <img width="250" height="250" src="../static/img/toys/lego/jeep.jpeg" alt="">
+                    <p>Каждый увлекающийся техникой ребенок будет гордиться, получив собственный мощный автомобиль 4X4.
+                        Эту мечту поможет осуществить модель Jeep® Wrangler LEGO® Technic™ (42122). Дети в возрасте от 9
+                        лет получат удовольствие от исследования культового внедорожника. Здесь есть ручка для
+                        управления рулем, а мощная подвеска с артикуляцией мостов позволит детям испытывать модель на
+                        препятствиях по всему дому.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <p>5500 руб.</p>
+                    <button class="uk-button uk-button-primary" type="button">В корзину</button>
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Отмена</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <div>
+                <div class="uk-card-badge uk-label">Новинка</div>
+                <div class="uk-card-media-top">
+                    <img width="250" height="250" src="../static/img/toys/lego/jurassic.png" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Jurassic World™ Погоня за птеранодоном</h3>
+                    <p>2700 руб.</p>
+                    <button class="uk-button uk-button-secondary uk-button-large" href="#modal-section-2" uk-toggle>
+                        Купить
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-section-2" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">Jurassic World™ Погоня за птеранодоном</h2>
+                </div>
+                <div class="uk-modal-body">
+                    <img width="250" height="250" src="../static/img/toys/lego/jurassic.png" alt="">
+                    <p>С этим игровым набором «Погоня за птеранодоном» (76943) для детей от 4 лет малыши смогут
+                        научиться собирать и по ролям разыгрывать захватывающие истории из «Мира Юрского периода». В нём
+                        есть модели игрушечного багги, рыбного прилавка и пристани. В набор, который станет отличным
+                        подарком для любящих динозавров детей, также входит подвижная фигурка птеранодона и две
+                        минифигурки с удочкой и лассо, чтобы вдохновить на творческую игру.</p>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <p>2700 руб.</p>
+                    <button class="uk-button uk-button-primary" type="button">В корзину</button>
+                    <button class="uk-button uk-button-default uk-modal-close" type="button">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <div>
+                <div class="uk-card-badge uk-label">Новинка</div>
+                <div class="uk-card-media-top">
+                    <img width="250" height="250" src="../static/img/toys/lego/bike.jpeg" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">LEGO® Разрушительный трюковый мотоцикл</h3>
+                    <p>1500 руб.</p>
+                    <button class="uk-button uk-button-secondary uk-button-large" href="#modal-section-3" uk-toggle>
+                        Купить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-section-3" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">LEGO® Разрушительный трюковый мотоцикл</h2>
+            </div>
+            <div class="uk-modal-body">
+                <img width="250" height="250" src="../static/img/toys/lego/bike.jpeg" alt="">
+                <p>Усильте детскую игру с набором «Разрушительный трюковый мотоцикл» LEGO® City (60297), в котором есть
+                    работающий от маховика скоростной мотоцикл для трюков, а также смелый персонаж из сериала «ЛЕГО
+                    Сити. Приключения» Уоллоп — идеальная комбинация для захватывающего каскадёрского представления.</p>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <p>1500 руб.</p>
+                <button class="uk-button uk-button-primary" type="button">В корзину</button>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Отмена</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <div>
+                <div class="uk-card-media-top">
+                    <img width="250" height="250" src="../static/img/toys/lego/minecraft.jpg" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Minecraft® LEGO edition</h3>
+                    <p>3300 руб.</p>
+                    <button class="uk-button uk-button-secondary uk-button-large" href="#modal-sections" uk-toggle>
+                        Купить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <div>
+                <div class="uk-card-media-top">
+                    <img width="250" height="250" src="../static/img/toys/lego/home_alone.jpg" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Home Alone LEGO® Ideas</h3>
+                    <p>12000 руб.</p>
+                    <button class="uk-button uk-button-secondary uk-button-large" href="#modal-sections" uk-toggle>
+                        Купить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <div>
+                <div class="uk-card-media-top">
+                    <img width="250" height="250" src="../static/img/toys/lego/lego_ninjago.jpeg" alt="">
+                </div>
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">LEGO® Ninjago</h3>
+                    <p>21000 руб.</p>
+                    <button class="uk-button uk-button-secondary uk-button-large" href="#modal-sections" uk-toggle>
+                        Купить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cart uk-margin-medium-right">
+    <a href="#"><img src="../static/img/cart.png" alt="" style="width: 80px; height: 80px;"/></a>
+</div>
+
+<footer class="uk-margin-medium-top">
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a class="uk-margin-small-left">© 2022 ToyMarket Все права защищены</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li><a class="uk-margin-small-left">Тел.: 8 (800) 100-55-55, электронная почта: info@toymarket.ru</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="#" class="uk-icon-link" uk-icon="instagram"></a></li>
+                <li><a href="#" class="uk-icon-link" uk-icon="tiktok"></a></li>
+                <li><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="whatsapp"></a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+</body>
+</html>

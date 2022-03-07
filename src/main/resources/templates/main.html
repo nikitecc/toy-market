@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин игрушек - домашняя страница</title>
+    <link rel="shortcut icon" href="../static/img/logo.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/uikit.min.css"/>
+    <script src="../static/js/uikit.min.js"></script>
+    <script src="../static/js/uikit-icons.min.js"></script>
+</head>
+<body>
+<nav class="uk-navbar-container" uk-navbar>
+
+    <img data-src="#" width="75" height="50" alt="" uk-img="../static/img/logo.png"
+         class="uk-margin-small uk-margin-small-top uk-margin-small-left">
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active uk-margin-small-left"><a href="#">Домашняя страница</a></li>
+            <li>
+                <a href="#">Игрушки</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Лего</a></li>
+                        <li><a href="#">Фортнайт</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Фабрики</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li><a href="#">Личный кабинет</a></li>
+            <li><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="user"></a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="uk-position-relative uk-visible-toggle uk-light uk-margin-small-top" tabindex="-1" uk-slider="center: true">
+
+    <ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../static/img/slider/lego_news.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../static/img/slider/lol_news.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../static/img/slider/roblox_news.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+        <li class="uk-width-3-4">
+            <div class="uk-cover-container">
+                <img src="../static/img/slider/fortnite_news.jpg" alt="" uk-cover>
+                <div class="uk-position-center uk-panel"></div>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+       uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+       uk-slider-item="next"></a>
+
+</div>
+
+<div class="uk-child-width-expand@s uk-text-center uk-margin-medium-top" uk-grid>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <article class="uk-comment">
+                <header class="uk-comment-header">
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-comment-avatar" src="../static/img/avatar_man.png" width="100" height="100"
+                                 alt="">
+                        </div>
+                        <div class="uk-width-expand uk-margin-medium-right">
+                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset">Александр</a></h4>
+                            <h4 class="uk-comment-meta uk-margin-small-top">
+                                <a class="uk-link-reset">12 дней назад</a>
+                            </h4>
+                        </div>
+                    </div>
+                </header>
+                <div class="uk-comment-body">
+                    <p>Отличный сайт. Купил сыну игрушку, играет уже вторую неделю.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <article class="uk-comment">
+                <header class="uk-comment-header">
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-comment-avatar" src="../static/img/avatar_woman.png" width="100" height="100"
+                                 alt="">
+                        </div>
+                        <div class="uk-width-expand uk-margin-medium-right">
+                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset">Виктория</a></h4>
+                            <h4 class="uk-comment-meta uk-margin-small-top">
+                                <a class="uk-link-reset">30 дней назад</a>
+                            </h4>
+                        </div>
+                    </div>
+                </header>
+                <div class="uk-comment-body">
+                    <p>Все супер, покупаю здесь уже третий раз. Посоветую обязательно подругам.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div>
+        <div class="uk-card uk-card-default uk-card-body">
+            <article class="uk-comment">
+                <header class="uk-comment-header">
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <img class="uk-comment-avatar" src="../static/img/avatar_man.png" width="100" height="100"
+                                 alt="">
+                        </div>
+                        <div class="uk-width-expand uk-margin-medium-right">
+                            <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset">Михаил</a></h4>
+                            <h4 class="uk-comment-meta uk-margin-small-top">
+                                <a class="uk-link-reset">2 дня назад</a>
+                            </h4>
+                        </div>
+                    </div>
+                </header>
+                <div class="uk-comment-body">
+                    <p>Сайт неплохой, но хотелось бы побольше новых игрушек.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+<footer class="uk-margin-medium-top">
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a class="uk-margin-small-left">© 2022 ToyMarket Все права защищены</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li><a class="uk-margin-small-left">Тел.: 8 (800) 100-55-55, электронная почта: info@toymarket.ru</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="#" class="uk-icon-link" uk-icon="instagram"></a></li>
+                <li><a href="#" class="uk-icon-link" uk-icon="tiktok"></a></li>
+                <li><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="whatsapp"></a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+</body>
+</html>

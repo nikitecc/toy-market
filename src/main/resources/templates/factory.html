@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин игрушек - фабрики</title>
+    <link rel="shortcut icon" href="../static/img/logo.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/uikit.min.css"/>
+    <script src="../static/js/uikit.min.js"></script>
+    <script src="../static/js/uikit-icons.min.js"></script>
+</head>
+<body>
+<nav class="uk-navbar-container" uk-navbar>
+    <img data-src="#" width="75" height="50" alt="" uk-img="../static/img/logo.png"
+         class="uk-margin-small uk-margin-small-top uk-margin-small-left">
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-margin-small-left"><a href="#">Домашняя страница</a></li>
+            <li><a href="#">Игрушки</a>
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="#">Лего</a></li>
+                        <li><a href="#">Фортнайт</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="uk-active"><a href="#">Фабрики</a></li>
+        </ul>
+    </div>
+
+    <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+            <li><a href="#">Личный кабинет</a></li>
+            <li><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="user"></a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="uk-overflow-auto">
+    <button class="uk-button uk-align-right uk-button-default uk-margin-small-top uk-margin-large-right"
+            href="#modal-section-add" uk-toggle>
+        Добавить фабрику
+    </button>
+
+    <div id="modal-section-add" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">Добавить новую фабрику</h2>
+            </div>
+            <div class="uk-modal-body" style="text-align:center">
+                <form>
+                    <p class="uk-h4">Название фабрики</p>
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-large" type="text" placeholder="">
+                    </div>
+                    <p class="uk-h4">Местоположение фабрики</p>
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-large" type="text" placeholder="">
+                    </div>
+                </form>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-primary uk-margin-small-right" type="button">Добавить</button>
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+
+    <table class="uk-table uk-table-hover uk-table-divider">
+        <thead>
+        <tr>
+            <th>Название фабрики</th>
+            <th>Местоположение</th>
+            <th>Поставляемые игрушки</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>
+                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="pencil"></a>
+                <a href="#" class="uk-icon-link" uk-icon="trash"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>
+                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="pencil"></a>
+                <a href="#" class="uk-icon-link" uk-icon="trash"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>Table Data</td>
+            <td>
+                <a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="pencil"></a>
+                <a href="#" class="uk-icon-link" uk-icon="trash"></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer class="uk-margin-medium-top uk-position-bottom">
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li><a class="uk-margin-small-left">© 2022 ToyMarket Все права защищены</a></li>
+            </ul>
+        </div>
+        <div class="uk-navbar-center">
+            <ul class="uk-navbar-nav">
+                <li><a class="uk-margin-small-left">Тел.: 8 (800) 100-55-55, электронная почта: info@toymarket.ru</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="#" class="uk-icon-link" uk-icon="instagram"></a></li>
+                <li><a href="#" class="uk-icon-link" uk-icon="tiktok"></a></li>
+                <li><a href="#" class="uk-icon-link uk-margin-small-right" uk-icon="whatsapp"></a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+</body>
+</html>

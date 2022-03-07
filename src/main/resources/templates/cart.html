@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин игрушек - корзина</title>
+    <link rel="shortcut icon" href="../static/img/logo.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/css/uikit.min.css"/>
+    <link rel="stylesheet" href="../static/css/style.css"/>
+    <script src="../static/js/uikit.min.js"></script>
+    <script src="../static/js/uikit-icons.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+</head>
+<body>
+
+<a href="#" class="uk-margin-small-top uk-margin-small-left">
+    <img width="75" height="50" alt="" uk-img="../static/img/home.png"
+         class="uk-margin-small-top uk-margin-small-left">
+</a>
+
+<div class="shopping-cart">
+    <!-- Title -->
+    <div class="title">
+        Корзина
+    </div>
+
+    <!-- Товар #1 -->
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+            <img src="../static/img/toys/lego/jeep.jpeg" alt="" />
+        </div>
+
+        <div class="description">
+            <span>Jeep Wrangler</span>
+            <span>LEGO®</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                <img src="../static/img/plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+                <img src="../static/img/minus.svg" alt="" />
+            </button>
+        </div>
+
+        <div class="total-price">5500 ₽</div>
+    </div>
+
+    <!-- Товар #2 -->
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+            <img src="../static/img/toys/lego/jurassic.png" alt=""/>
+        </div>
+
+        <div class="description">
+            <span>Погоня за птеранодоном</span>
+            <span>LEGO® Jurassic World™</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                <img src="../static/img/plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+                <img src="../static/img/minus.svg" alt="" />
+            </button>
+        </div>
+
+        <div class="total-price">2700 ₽</div>
+    </div>
+
+    <!-- Товар #3 -->
+    <div class="item">
+        <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+        </div>
+
+        <div class="image">
+            <img src="../static/img/toys/lego/bike.jpeg" alt="" />
+        </div>
+
+        <div class="description">
+            <span>Разрушительный трюковый мотоцикл</span>
+            <span>LEGO®</span>
+        </div>
+
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+                <img src="../static/img/plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+                <img src="../static/img/minus.svg" alt="" />
+            </button>
+        </div>
+
+        <div class="total-price">1500 ₽</div>
+    </div>
+    <button class="uk-button uk-button-primary uk-margin-small-top" type="button">Оформить заказ</button>
+</div>
+
+
+<script type="text/javascript">
+    $('.minus-btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('div').find('input');
+        var value = parseInt($input.val());
+
+        if (value > 1) {
+            value = value - 1;
+        } else {
+            value = 0;
+        }
+
+        $input.val(value);
+
+    });
+
+    $('.plus-btn').on('click', function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var $input = $this.closest('div').find('input');
+        var value = parseInt($input.val());
+
+        if (value < 100) {
+            value = value + 1;
+        } else {
+            value =100;
+        }
+
+        $input.val(value);
+    });
+
+    $('.like-btn').on('click', function() {
+        $(this).toggleClass('is-active');
+    });
+</script>
+</body>
+</html>
