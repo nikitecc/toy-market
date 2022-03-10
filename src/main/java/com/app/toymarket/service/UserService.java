@@ -14,4 +14,6 @@ public interface UserService {
     void saveUser(User user);
 
     User getRegisteredUser(String name, String password);
+
+    void processOAuthPostLogin(String email, String username);
 }
