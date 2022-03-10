@@ -20,3 +20,5 @@ BackEnd:
 - Spring Boot
 - Spring Web
 - Spring Data
+- Spring Security
+- OAuth2 (Google)
