@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-gb" dir="ltr" class="uk-height-1-1">
+<html lang="en-gb" dir="ltr" class="uk-height-1-1"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <title>Магазин игрушек - вход</title>
-    <link rel="shortcut icon" href="../static/img/logo.png" type="image/png">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../static/css/uikit.min.css"/>
-    <script src="../static/js/uikit.min.js"></script>
-    <script src="../static/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="/css/uikit.min.css"/>
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
 </head>
 
 <body>
 
 <a href="#" class="uk-margin-small-top uk-margin-small-left">
-    <img width="75" height="50" alt="" uk-img="../static/img/home.png"
+    <img width="75" height="50" alt="" uk-img="/img/home.png"
          class="uk-margin-small uk-margin-small-top uk-margin-small-left">
 </a>
 
 <div class="uk-text-center uk-margin-large-top">
-    <form>
+    <form th:action="@{/login}" method="post">
         <div class="uk-margin">
-            <img width="75" height="50" alt="" uk-img="../static/img/logo.png">
+            <img width="75" height="50" alt="" uk-img="/img/logo.png">
             <p class="uk-text-large uk-text-secondary">Вход</p>
         </div>
 
@@ -39,13 +41,24 @@
             </div>
         </div>
 
+        <div th:if="${param.error}" style="color:#dc143c;">
+            Не правильное имя пользователя или пароль.
+        </div>
+
         <div class="uk-margin">
-            <button class="uk-button uk-button-default">Вход
-            </button>
+            <button type="submit" value="login" class="uk-button uk-button-default">Вход</button>
         </div>
 
         <div class="uk-margin uk-margin-small-top">
             <label>
+                <span uk-icon="icon: google"></span>
+                <a th:href="@{/oauth2/authorization/google}">Войти с помощью Google</a>
+            </label>
+        </div>
+
+        <div class="uk-margin uk-margin-small-top">
+            <label>
+                <span uk-icon="icon: sign-in"></span>
                 <a href="">Я не зарегистрирован</a>
             </label>
         </div>
