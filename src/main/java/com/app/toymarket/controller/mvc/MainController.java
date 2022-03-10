@@ -1,4 +1,4 @@
-package com.app.toymarket.controller;
+package com.app.toymarket.controller.mvc;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
