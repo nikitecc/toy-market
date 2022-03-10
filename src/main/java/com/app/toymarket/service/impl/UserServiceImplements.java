@@ -1,5 +1,6 @@
 package com.app.toymarket.service.impl;
 
+import com.app.toymarket.entity.AuthenticationProvider;
 import com.app.toymarket.entity.User;
 import com.app.toymarket.exception.UserNotFoundException;
 import com.app.toymarket.repository.UserRepository;
@@ -41,7 +42,27 @@ public class UserServiceImplements implements UserService {
 
     @Override
     public User getRegisteredUser(String name, String password) {
-        return userRepository.userByNameAndPassword(name, password).orElseThrow(() -> new UserNotFoundException("Такой пользователь не зарегистрирован."));
+        return userRepository.getUserByNameAndPassword(name, password).orElseThrow(() -> new UserNotFoundException("Такой пользователь не зарегистрирован."));
+    }
+
+    @Override
+    public void processOAuthPostLogin(String email, String username) {
+        User existUser = userRepository.getUserByEmailAndName(email, username);
+
+        if (existUser == null) {
+            User newUser = new User();
+            newUser.setAuthenticationProvider(AuthenticationProvider.GOOGLE);
+            newUser.setName(username);
+            newUser.setEmail(email);
+
+            userRepository.save(newUser);
+        } else {
+            existUser.setAuthenticationProvider(AuthenticationProvider.GOOGLE);
+            existUser.setName(username);
+            existUser.setEmail(email);
+
+            userRepository.save(existUser);
+        }
     }
 }
 
